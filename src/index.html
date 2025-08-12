@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>test</title>
+</head>
+<body>
+    <main class="main" role="main" aria-label="Страница входа">
+        <section class="form-side">
+            <div class="form-wrap">
+                <img src="../src/img/logo.png" alt="logo" class="logo">
+                <h1>Вход в UMSOT BIZ</h1>
+                <form class="login-form" action="#" method="post">
+                    <div class="field">
+                        <label for="email" type="email" class="label">Email</label>
+                        <div class="control">
+                            <input type="email" name="email" class="input" id="email" autocomplete="email" placeholder="Введите адрес электронной почты" required/>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="password" class="label">Пароль</label>
+                        <div class="control">
+                            <input type="password" name="password" class="input" id="password" autocomplete="current-password" placeholder="Введите пароль" required/>
+                            <button type="button" class="eye-btn" aria-label="Показать пароль" aria-pressed="false">
+                                <svg width="16" class="icon-eye" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.797272C4.36364 0.797272 1.25818 3.05909 0 6.25182C1.25818 9.44454 4.36364 11.7064 8 11.7064C11.6364 11.7064 14.7418 9.44454 16 6.25182C14.7418 3.05909 11.6364 0.797272 8 0.797272ZM8 9.88818C5.99273 9.88818 4.36364 8.25909 4.36364 6.25182C4.36364 4.24454 5.99273 2.61545 8 2.61545C10.0073 2.61545 11.6364 4.24454 11.6364 6.25182C11.6364 8.25909 10.0073 9.88818 8 9.88818ZM8 4.07C6.79273 4.07 5.81818 5.04454 5.81818 6.25182C5.81818 7.45909 6.79273 8.43363 8 8.43363C9.20727 8.43363 10.1818 7.45909 10.1818 6.25182C10.1818 5.04454 9.20727 4.07 8 4.07Z" fill="#4D4D4D"/>
+                                </svg>
+                                <svg class="icon-eye-off" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:none">
+                                    <path d="M3 3l18 18-1.4 1.4-2.3-2.3A12 12 0 0 1 12 19c-5.5 0-9-5-9-7a11 11 0 0 1 4.2-5.9L1.6 4.4 3 3zm12.7 9.7a5 5 0 0 0-6.4-6.4l6.4 6.4zM7.3 10.3a5 5 0 0 0 6.4 6.4l-6.4-6.4z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="link">Забыли пароль?</a>
+                    </div>
+                    <div class="actions-submit">
+                        <button class="btn btn-primary" type="submit">Войти</button>
+                    </div>
+                </form>
+                <div class="sep" aria-hidden="true"></div>
+                <button class="btn btn-google" type="button" aria-label="Войти с Google">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3689 11.1087C20.3698 10.4272 20.3117 9.74701 20.1955 9.07544H10.6997V12.9266H16.1385C16.0272 13.5417 15.7916 14.1281 15.446 14.6503C15.1004 15.1726 14.6518 15.6199 14.1274 15.9654V18.4652H17.3733C19.2739 16.7251 20.3689 14.1516 20.3689 11.1087Z" fill="#4285F4"/>
+                        <path d="M10.6998 20.8806C13.4171 20.8806 15.705 19.9946 17.3734 18.4669L14.1275 15.967C13.2241 16.5753 12.0605 16.9225 10.6998 16.9225C8.0734 16.9225 5.8442 15.1642 5.04706 12.7949H1.70325V15.3712C2.54132 17.0273 3.82641 18.4195 5.41506 19.3924C7.0037 20.3653 8.83336 20.8805 10.6998 20.8806Z" fill="#34A853"/>
+                        <path d="M5.04698 12.7946C4.62556 11.5531 4.62556 10.2086 5.04698 8.96701V6.39075H1.70317C0.998154 7.78395 0.630981 9.32157 0.630981 10.8808C0.630981 12.44 0.998154 13.9777 1.70317 15.3709L5.04698 12.7946Z" fill="#FBBC04"/>
+                        <path d="M10.6998 4.83941C12.1357 4.81611 13.5233 5.3549 14.5624 6.33933L17.4363 3.48531C15.614 1.7855 13.1998 0.852274 10.6998 0.881271C8.83336 0.881356 7.0037 1.3966 5.41506 2.36948C3.82641 3.34236 2.54132 4.73458 1.70325 6.39072L5.04706 8.96698C5.8442 6.59765 8.0734 4.83941 10.6998 4.83941Z" fill="#EA4335"/>
+                    </svg>
+                    Войти с помощью Google
+                </button>
+                <p class="signup-hint">
+                    Нет аккаунта?
+                    <a href="#" class="link link-create">Создать</a>
+                </p>
+                <p class="copyright muted">© UMSOT LLC 2025</p>
+            </div>
+        </section>
+        <aside class="media" aria-hidden="true">
+            <picture>
+                <source media="(min-width: 501px)" srcset="../src/img/hero-desktop.jpg">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" role="presentation" />
+            </picture>
+        </aside>
+    </main>
+    <script src="../src/js/main.js"></script>
+</body>
+</html>
